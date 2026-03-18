@@ -3,9 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Gestion_de_boutique</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    
+    <div class="container">
+        <div class="div2">
+            <h2>MINI BOUTIQUE</h2>
+        </div>
+        
+        <div class="div1">
+            <h1>Listes des produits :</h1>
+            <div class="menu-grid">
+                <div class="menu-category">
+                    <h3>Desserts</h3>
+                    <ul>
+                        <li><span>Gateaux</span> <span>2000 Ar</span></li>
+                        <li><span>Chocolat</span> <span>1000 Ar</span></li>
+                        <li><span>Glace</span> <span>500 Ar</span></li>
+                    </ul>
+                </div>
+                <div class="menu-category">
+                    <h3>Plats</h3>
+                    <ul>
+                        <li><span>Riz cantonnais</span> <span>3000 Ar</span></li>
+                        <li><span>Riz au zébus</span> <span>4000 Ar</span></li>
+                        <li><span>Riz au Légumes</span> <span>2000 Ar</span></li>
+                    </ul>
+                </div>
+                <div class="menu-category">
+                    <h3>Boissons</h3>
+                    <ul>
+                        <li><span>Coca</span> <span>1500 Ar</span></li>
+                        <li><span>Jus naturel</span> <span>500 Ar</span></li>
+                        <li><span>Yaourt à boire</span> <span>600 Ar</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="div1">
+            <h1>Achat produit</h1>
+                <form>
+                    <label>Nom du produit à acheter :</label>
+                    <select name="select" id="sel">
+                        <option value="gateau">Gateaux</option>
+                        <option value="chocolat">Chocolat</option>
+                        <option value="glace">Glace</option>
+                        <option value="riz_cantonnais">Riz contonais</option>
+                        <option value="riz_au_zebus">Ris au zébus</option>
+                        <option value="riz_legumes">Riz au Légumes</option>
+                        <option value="coca">Coca</option>
+                        <option value="jus">Jus naturel</option>
+                        <option value="yaourt">Yaourt à boire</option>
+                    </select><br>
+                    <label>Quantité :</label>
+                    <input type="number" id="qte" min="1" value="1"><br><br>
+                    <button id="btn" type="button">Ajouter au panier</button>
+                    <button id="reset-btn" type="button">Tout réinitialiser</button>
+                </form>
+            
+        </div>
+        <div class="div1 result-box">
+            <h1>Votre Panier :</h1>
+            <div id="afficher">
+                <p>Le panier est vide.</p>
+            </div>
+            
+        </div>
+    </div>
+    
+    
+    <script src="javascript.js"></script>
     
 </body>
 </html>
